@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:background="?attr/colorPrimary">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimary"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/nav_icon"
+            android:layout_centerInParent="true"
+    />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:autoLink="web"
-        android:gravity="center"
-        android:text="\n\n\n主要功能大致已经做完了\n\n\n有问题联系我可以去\n\n\n简书:http://www.jianshu.com/users/0da7bdbfddb2/latest_articles \n\n\n博客:http://www.mapleslong.com"/>
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="530711667@qq.com"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+    />
 
-</LinearLayout>
+    <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/username"
+            android:text="Eternity-Myth"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+    />
+
+</RelativeLayout>

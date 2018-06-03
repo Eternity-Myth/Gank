@@ -1,4 +1,4 @@
-package com.eternity_myth.gank.view;
+package com.eternity_myth.gank;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,11 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.eternity_myth.gank.ConvertUtil;
-import com.eternity_myth.gank.R;
 import com.eternity_myth.gank.adapter.GankTypeCardAdapter;
 import com.eternity_myth.gank.model.GankData;
 import com.eternity_myth.gank.presenter.TypePresenter;
+import com.eternity_myth.gank.view.BaseMvpFragment;
+import com.eternity_myth.gank.view.TypeFragmentView;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.util.ArrayList;

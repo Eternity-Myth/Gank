@@ -6,15 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.*;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.eternity_myth.gank.adapter.GankViewPagerAdapter;
 import com.eternity_myth.gank.presenter.BasePresenter;
 import com.eternity_myth.gank.view.BaseMvpFragment;
-import com.eternity_myth.gank.view.TypeFragment;
+
 import com.eternity_myth.gank.view.TypeFragmentView;
 import rx.Observable;
 import rx.functions.Action1;
@@ -84,6 +82,5 @@ public class MainFragment extends BaseMvpFragment<TypeFragmentView, BasePresente
         initViews();
         return rootView;
     }
-
 
 }
